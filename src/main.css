@@ -1,0 +1,42 @@
+.encabezado {
+  background-image: url(./assets/imgs/banner.jpg);
+  height: 200px;
+  margin: 56px 0 20px 0;
+}
+
+p {
+  color: white;
+  font-size: 40px;
+  padding: 55px;
+}
+
+.tarjetasContainer {
+  width: 1500px;
+  height: 180px;
+  display: flex;
+  gap: 50px;
+  justify-content: space-evenly;
+  margin: 50px 0 50px 0;
+  animation: slideInOut 15s linear infinite;
+}
+
+.tarjetas {
+  background-color: rgba(123, 78, 24, 0.053);
+  height: 180px;
+}
+
+@keyframes slideInOut {
+  0% {
+    transform: translateX(99%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.textCard {
+  color: black;
+}
